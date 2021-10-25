@@ -23,8 +23,29 @@ function buildTable(data) {
         Object.values(dataRow).forEach((val)=> {
             let cell = row.append("td");
             cell.text(val);
-        }
-    );
+            }
+        );
         
     });
 }
+
+function handleClick() {
+    let date = d3.select("#datetime").property("value");
+    let filteredData = tableData;
+
+    // if date is entered, 
+    if (date) {
+        // apply filter to table data to only keep the 
+        // rows whered 'datetime' matches filtered value
+        filteredData = filteredData.filter(row => row.datetime
+             === date);
+        // rebuild the table using filtered data
+        buildTable(filteredData);
+    };
+}
+
+// attache an event to listen for the form button
+d3.select("#filter-btn").on("click", handleClick);
+
+// load original table for users to see at page load
+buildTable(tableData);
