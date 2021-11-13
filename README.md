@@ -13,9 +13,8 @@ The purpose of this project is to use JavaScript with HTML, CSS, and Bootstrap t
 ## Results
 The webpage opens to a title and article on UFO sightings as depicted below. The page has a dark background with white font and can can adjust according to the device screen size.  A selected image was used as the background for the jumbotron.
 
-![ufo(2)](images/ufo.png)
-
-Using the JavaScript D3 library, the webpage allows users to filter the table data by date, city, state, country, and shape. The user will enter their search criteria under filters and the table is automatically filtered to selection. Users must follow format for entries. In the image that follows, the table is unfiltered and then filtered with multiple show UFO sightings in state: 'ca' that had shape:'triangle'. This search returns 7 UFO sightings. 
+<img src ="images/ufo.png" width="500">
+Using the JavaScript D3 library, the webpage allows users to filter the table data by date, city, state, country, and shape. The user will enter their search criteria under filters and the table is automatically filtered to selection. Users must follow format for entries. In the image that follows, the table is unfiltered and then filtered with multiple show UFO sightings in state: 'ca' that had shape:'triangle'. This search returns 7 UFO sightings.
 
 ![new_filter](images/new_filter.png)
 
